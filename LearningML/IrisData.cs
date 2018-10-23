@@ -22,8 +22,7 @@ namespace LearningML
         [Column("3")]
         public float PetalWidth { get; set; }
 
-        [Column("4")]
-        [ColumnName("Label")]
+        [Column(ordinal: "4", name: "Label")]
         public string Label { get; set; }
     }
 }
